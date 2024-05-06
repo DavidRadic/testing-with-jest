@@ -10,5 +10,8 @@
     "test": "jest tests"
   },
   "author": "David Radic",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
 }
