@@ -23,6 +23,6 @@ test('peek does not remove the top element', () => {
     stack.push(2);
     stack.push(3);
     const topElement = stack.peek();
-    expect(stack.peek()).toBe(2); 
+    expect(stack.peek()).toBe(3); 
     expect(stack.peek()).toBe(topElement); 
 });
