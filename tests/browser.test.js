@@ -30,7 +30,7 @@ test('The push button should exist and be clickable', async () => {
 	//Kontrollerar om push-knappen finns och är klickbar
 	expect(pushButton).toBeDefined();
 	const isClickable = await pushButton.isEnabled();
-	expect(isClickable).toBe(false);
+	expect(isClickable).toBe(true);
 });
 
 describe('Clicking "Pusha till stacken"', () => {
