@@ -18,6 +18,7 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
+// Davids första test
 test('peek does not remove the top element', () => {
     stack.push(1);
     stack.push(2);

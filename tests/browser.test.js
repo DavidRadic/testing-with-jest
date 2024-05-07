@@ -22,7 +22,7 @@ test('The stack should be empty in the beginning', async () => {
 	let stack = await driver.findElement(By.id('top_of_stack')).getText();
 	expect(stack).toEqual("n/a");
 });
-
+// Davids andra test
 test('The push button should exist and be clickable', async () => {
 	// Hittar elementet för knappen
 	const pushButton = await driver.findElement(By.id('push'));
