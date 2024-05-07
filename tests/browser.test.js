@@ -23,6 +23,16 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
+test('The push button should exist and be clickable', async () => {
+	// Hittar elementet för knappen
+	const pushButton = await driver.findElement(By.id('push'));
+
+	//Kontrollerar om push-knappen finns och är klickbar
+	expect(pushButton).toBeDefined();
+	const isClickable = await pushButton.isEnabled();
+	expect(isClickable).toBe(false);
+});
+
 describe('Clicking "Pusha till stacken"', () => {
 	it('should open a prompt box', async () => {
 		let push = await driver.findElement(By.id('push'));
